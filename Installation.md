@@ -35,13 +35,7 @@ station name connect SSID //To connect to your Wi-FI
 After that, check if you're actually connected to the internet:
 ```bash
 ping www.archlinux.org
-
-//If it pings, then you're connected to the internet
-
-Press Ctrl+C to stop the pinging
 ```
+If it responds, internet is working.
 
-#  Partitioning the disk
-
-## Identifying the disk
-
+Press Ctrl+C to stop.
