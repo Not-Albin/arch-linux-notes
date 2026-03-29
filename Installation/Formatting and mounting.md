@@ -3,17 +3,17 @@
 Next step to do after creating the partition is to format it.
 Carefully, this step requires to format the partition make sure to double check if you are formatting thr correct disk.
 
-##Create an Ext4 file system on your root partition
+## Create an Ext4 file system on your root partition
 ```bash
 mkfs.ext4 /dev/sda3
 ```
 Replace disk with your root partition.
 
-##Next initialize your swap partition.
+## Next initialize your swap partition.
 ```bash
 mkswap /dev/sda2
 ```
-##After that you have to format your EFI file partition.
+## After that you have to format your EFI file partition.
 ```bash
 mkfs.fat -F 32 /dev/sda1
 ```
@@ -21,7 +21,7 @@ That is for the disk formatting.
 
 Next we have to mount these partition with our linux file system.
 
-#Mount the file system
+# Mount the file system
 
 First mount the root volume to /mnt
 ```bash
