@@ -1,41 +1,70 @@
-Before we begin, I hope you have already created a bootable USB drive with the Arch ISO. 
-# Verifying the boot environment
-What does this mean? 
-We are checking whether your device is set to UEFI or BIOS mode. There are slight differences in the installation process for both.
-There is a easy way to check it. That is during the initial boot. If you got greeted with a menu like this,
+# Base Install
+> [Arch Wiki: Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 
-<img width="800" height="228" alt="image" src="https://github.com/user-attachments/assets/5ae80a3d-6042-478f-ab06-a26b27e52e54" /><br>
+After partitions are mounted, throw the base system onto the disk.
 
+## Mirrors first
+Slow mirrors mean slow install. This saves a lot of waiting around.
 
-As you can see, 'UEFI' is clearly written on that image. So, the system is booted into UEFI mode. 
-This is an easy way to recognise which mode your system has booted into without using any commands. 
-Or run this command:
 ```bash
-cat /sys/firmware/efi/fw_platform_size
-//if it returns 64, then you are booted into UEFI mode.
-//if it returns "no file exist", then you are booted into BIOS mode.
+reflector --country 'India' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 ```
-# Connecting to Internet
-Personally, I recommend using an Ethernet connection when setting up Arch Linux for the first time. Things can get a bit tricky when setting up Wi-Fi.
+Change 'India' to your country.
 
-For ethernet, just plug it in.
+## Pacstrap
 
-To use Wi-Fi, you will need to use a utility called 'iwctl'.
 ```bash
-$iwctl  //to get into the interactive prompt
-
-device list //To list out your adapter name
-
-station name scan //This will initialize scanning and replace name with your adapter name
-
-station name get-networks //List out the available wifi names
-
-station name connect SSID //To connect to your Wi-FI
+pacstrap -K /mnt base base-devel linux linux-firmware linux-headers vim nano git man-db man-pages texinfo intel-ucode
 ```
-After that, check if you're actually connected to the internet:
+
+The `-K` flag sets up pacman keys inside the new system. I used to forget that.
+
+> **Why so many extras:** `linux-headers` because you'll need them for DKMS later. `intel-ucode` because microcode updates are not optional on Intel — switch to `amd-ucode` if you're on AMD. Read [Arch Wiki: Microcode](https://wiki.archlinux.org/title/Microcode). The rest are just things you will want inside the chroot (editors, git, man pages).
+
+
+## Make fstab
+
 ```bash
-ping www.archlinux.org
+genfstab -U /mnt >> /mnt/etc/fstab
 ```
-If it responds, internet is working.
+This tells the system to mount all the partition during every boot.
 
-Press Ctrl+C to stop.
+Always check it after:
+
+```bash
+cat /mnt/etc/fstab
+```
+
+Look for your partitions by UUID. If a partition is missing here, it will not mount on boot.
+
+## Chroot in
+
+```bash
+arch-chroot /mnt
+```
+
+Prompt changes. You are no longer on the live ISO from this point.
+
+Set the root password before doing anything else:
+
+```bash
+passwd
+```
+
+## Speed pacman up inside the chroot
+
+```bash
+nano /etc/pacman.conf
+```
+
+Uncomment:
+```
+Color
+ParallelDownloads = 5
+```
+
+Makes a surprising difference when you start pulling down desktop stuff.
+
+## Don't forget
+- If you did not mount everything before `pacstrap`, you'll get a silent failure. The ISO's `/mnt` is empty if nothing is mounted there.
+- If you start setting hostname and timezone before `arch-chroot`, you're configuring the live ISO, which gets thrown away on reboot.

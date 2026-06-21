@@ -1,50 +1,48 @@
 # Arch Linux Notes
-A practical documentation of my Arch Linux setup. From the base installation to daily use. 
 
-This is not a copy-paste guide. 
-It's a collection of what I actually used, what I have broke, and how I fixed it.
+My notes on getting Arch Linux running. From the first boot of the ISO to a fully configured daily driver.
 
+This is not a copy-paste guide. It is stuff I have actually used, stuff I have broken, and how I fixed it.
 
-## Who this is for?
+## Who This Is For
 
-- Beginners trying Arch for first time.
-- People tired of vague tutorials.
-- Beginner friendly Arch-wikii guides(Not all, only the important ones)
+- **Complete beginners** who want a clear path through the Arch install without the noise of outdated tutorials.
+- **Regular Arch users** who need a quick reference for common tasks — setting up a new desktop, debugging a black screen, fixing pacman, whatever.
 
 ---
 
-## :wrench: What this repo covers?
-- Manual Arch Linux installation.
-- Bootloader setup
-- Basic System configuration
-- i3 window manager setup
-- Common mistakes and fixes
+## Table of Contents
+
+### Installation
+- [Pre-Install Checklist](Installation/pre-install-checklist.md) — ISO verification, bootable USB, UEFI vs BIOS, getting online.
+- [Partitioning](Installation/partitioning.md) — Disk layouts for UEFI and BIOS, swap options, formatting and mounting.
+- [Base Install](Installation/base-install.md) — Pacstrap, fstab, arch-chroot, and essential packages.
+- [Bootloader](Installation/bootloader.md) — GRUB for UEFI and BIOS, systemd-boot, dual boot with Windows.
+- [Locale and Timezone](Installation/locale-and-timezone.md) — Language, time, hostname, and hosts file.
+
+### Post-Install
+- [Users and Sudo](Post-Install/users-and-sudo.md) — Creating a user, wheel group, sudo configuration.
+- [Networking](Post-Install/networking.md) — NetworkManager, Wi-Fi, static IP, DNS.
+- [Audio](Post-Install/audio.md) — PipeWire setup, testing, and troubleshooting.
+- [AUR Helpers](Post-Install/aur-helpers.md) — What the AUR is, yay and paru, safety tips.
+- [Pacman Basics](Post-Install/pacman-basics.md) — Essential commands, pacman.conf tweaks, mirror management.
+
+### Desktop
+- [i3 Window Manager Setup](Desktop/i3wm-setup.md) — i3, dmenu/rofi, wallpaper, autostart.
+- [Display Manager](Desktop/display-manager.md) — LightDM, greetd, autologin.
+- [Fonts and Theming](Desktop/fonts-and-theming.md) — Nerd Fonts, GTK themes, cursor and icon packs.
+- [Picom](Desktop/picom.md) — Compositor setup, vsync, transparency, fixing screen tearing.
+
+### Troubleshooting
+- [Common Boot Issues](Troubleshooting/common-boot-issues.md) — GRUB rescue, missing EFI entry, chroot recovery.
+- [Network Debug](Troubleshooting/network-debug.md) — Wi-Fi issues, missing firmware, rfkill, rtl8821cu.
+- [Black Screen After Login](Troubleshooting/black-screen-after-login.md) — Xorg not starting, missing drivers, .xinitrc.
+- [Pacman Errors](Troubleshooting/pacman-errors.md) — Signatures, partial upgrades, database locks, broken mirrors.
+
 ---
 
-## :notebook: Installation Overview
-These are some basic steps I followed:
-```bash
-# Partition disk
-# Format partitions
-# Mount filesystem
+## A Note on Maintenance
 
-pacstrap /mnt base linux linux-firmware
+Arch is a rolling-release distribution. Before updating, always check the [Arch News](https://archlinux.org/news/) for manual interventions. Running `sudo pacman -Syu` blindly after a long gap can break things. I have learned this the hard way more than once.
 
-genfstab -U /mnt >> /mnt/etc/fstab
-
-arch-chroot /mnt
-```
-After that: 
-- Set timezone, locale and hostname
-- Install bootloader(GRUB)
-- Create a user and passwords
-
-Full detailed steps are inside the /installation folder.
-
-## :memo: Configuration
-After installation:
-- Installed and configured i3 window manager(you can use a desktop environment like KDE plasma)
-- Enabled NetworkManager for Wi-Fi
-- Tweaked system for daily usability
-
- Check /configuration for details.
+If something goes wrong, the [Arch Wiki](https://wiki.archlinux.org) remains the definitive source of truth. This repository is a companion, not a replacement.
