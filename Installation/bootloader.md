@@ -29,6 +29,17 @@ grub-install --target=i386-pc /dev/nvme0n1
 
 On BIOS, that goes to the whole disk, not a partition.
 
+**Dual booting:**
+
+Make sure the below mentioned command is uncomment.
+
+```bash
+nano /etc/default/grub
+uncomment this line:
+GRUB_DISABLE_OS_PROBER=false
+```
+Save it.
+
 Generate the config:
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg

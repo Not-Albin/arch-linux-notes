@@ -29,6 +29,7 @@ If every package download fails with a 404:
 sudo reflector --country 'India' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syu
 ```
+This usually happens with outdated mirrors. In majority of cases reflector fixes
 
 ## Common Mistakes
 - **Running `pacman -S` without `-yu` after not updating for weeks.** This causes a partial upgrade state. Always sync before installing.

@@ -2,8 +2,6 @@
 > [Arch Wiki: Network configuration](https://wiki.archlinux.org/title/Network_configuration) & [Arch Wiki: NetworkManager](https://wiki.archlinux.org/title/NetworkManager)
 Getting online. NetworkManager is what I use on all my Arch installs because it just works.
 
-## Prerequisites
-You have rebooted into your new Arch system or are still in the chroot.
 
 ## 1. NetworkManager (What I recommend)
 Install NetworkManager and the command-line tools:
@@ -29,7 +27,7 @@ nmcli device wifi connect "SSID" password "password"
 ```bash
 nmtui
 ```
-I actually prefer `nmtui` when I am too lazy to remember the exact `nmcli` incantation.
+If you like more interactive TUI.
 
 ## 2. iwd backend (Faster, lightweight)
 NetworkManager can use `iwd` instead of `wpa_supplicant`:

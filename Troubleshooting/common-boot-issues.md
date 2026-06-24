@@ -44,7 +44,7 @@ Boot into Arch, then re-run `grub-mkconfig`.
 ## Dual Boot issues
 If os-prober didn't detect window, make sure that:
 - Both Windows and Linux is configured for BIOS or UEFI. If one is BIOS and other is UEFI, then os-prober won't detect it.
-- Install fuse3, I had the similar issue os-prober not detecting, but after install fuse3 fixes it.
+- Install fuse3, I had the similar issue os-prober not detecting, but after installing fuse3 fixed my issue.
 ```bash
 sudo pacman -S fuse3
 ```

@@ -19,7 +19,6 @@ If it says `Soft blocked: yes`:
 ```bash
 rfkill unblock wifi
 ```
-I have lost count of how many times this was the problem.
 
 ## 3. Missing Firmware
 If `dmesg | grep -i firmware` shows missing files, install the firmware package for your chipset:
@@ -31,6 +30,7 @@ For Realtek USB adapters (e.g., `rtl8821cu`):
 ```bash
 yay -S rtl8821cu-dkms
 ```
+If the built-in kernel driver isn't working, make sure to download and install dkms driver of your respectively USB adapter. Use the AUR package, it is easiler than manually installing dkms driver. 
 
 ## 4. Ethernet Not Working
 Check the cable and the link lights. Then:
