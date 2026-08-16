@@ -1,6 +1,25 @@
+<div align="center">
+
 # Arch Linux Notes
 
-Everything from booting the ISO to a working daily driver. What I've used, what broke, how I fixed it.
+Personal notes from installing and running Arch as a daily driver.  
+What worked, what broke, and how I fixed it.
+
+[Installation](#installation) • [Post-Install](#post-install) • [Desktop](#desktop) • [Troubleshooting](#troubleshooting)
+
+</div>
+
+---
+
+## What this is
+
+A collection of short, practical guides covering the path from Arch ISO to a usable desktop. These are **my** notes — not a replacement for the [Arch Wiki](https://wiki.archlinux.org). Use them as a faster reference when you already know the basics or just need the exact commands and gotchas I hit.
+
+**Suggested order for a fresh install:**
+1. Installation (in order)
+2. Post-Install
+3. Desktop (if you want a graphical environment)
+4. Troubleshooting (keep this bookmarked)
 
 ---
 
@@ -52,10 +71,12 @@ Everything from booting the ISO to a working daily driver. What I've used, what 
 
 ## One rule
 
-**Read [Arch News](https://archlinux.org/news/) before `pacman -Syu`.** Updating blindly after a gap breaks things — I've done it more than once.
+> [!IMPORTANT]
+> **Read [Arch News](https://archlinux.org/news/) before every `pacman -Syu`.**  
+> Updating after a long gap without checking the news is the fastest way to break your system. I’ve done it more than once.
 
-The [Arch Wiki](https://wiki.archlinux.org) is the real reference. These notes are a shortcut, not a replacement.
+The [Arch Wiki](https://wiki.archlinux.org) remains the real reference. These notes are just a shortcut.
 
 ---
 
-*Updated August 2025*
+*Last updated: August 2026*
