@@ -18,6 +18,8 @@ Find your actual drive. `loop0` is the live ISO, `sda` might be a USB stick, and
 | `/`         | Linux x86-64  | 20 GiB+        |
 | `/home`     | Linux x86-64  | Rest of disk   |
 
+`/home` is optional, if you prefer to separate your personal files from `/root`,then it's better to use a separate `/home` partitioning.
+
 With `cfdisk`:
 
 ```bash
