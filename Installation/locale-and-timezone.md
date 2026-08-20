@@ -33,6 +33,14 @@ For UK English:
 ```
 en_GB.UTF-8 UTF-8
 ```
+For English (India):
+```
+en_IN.UTF-8 UTF-8
+```
+For US English:
+```
+en_US.UTF-8 UTF-8
+```
 
 Generate it:
 ```bash
