@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Installation](.) • [← Partitioning](partitioning.md) • [Next: Bootloader →](bootloader.md)
+
+</div>
+
+---
+
 # Base Install
 > [Arch Wiki: Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 

@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Troubleshooting](.) • [← Black Screen After Login](black-screen-after-login.md)
+
+</div>
+
+---
+
 # Pacman Errors
 > [Arch Wiki: Pacman](https://wiki.archlinux.org/title/Pacman)
 Recovering from common package management failures. We have all been there.
@@ -27,7 +35,6 @@ This happens if a previous pacman installation crashed or was interrupted. I hav
 If every package download fails with a 404:
 ```bash
 sudo reflector --country 'India' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-sudo pacman -Syu
 ```
 This usually happens with outdated mirrors. In majority of cases reflector fixes
 

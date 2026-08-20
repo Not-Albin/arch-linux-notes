@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Post-Install](.) • [← Networking](networking.md) • [Next: AUR Helpers →](aur-helpers.md)
+
+</div>
+
+---
+
 # Audio
 > [Arch Wiki: PipeWire](https://wiki.archlinux.org/title/PipeWire)
 Getting sound working. PipeWire is the modern replacement for PulseAudio and it is what I use.

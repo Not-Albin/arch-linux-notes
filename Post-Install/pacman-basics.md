@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Post-Install](.) • [← AUR Helpers](aur-helpers.md)
+
+</div>
+
+---
+
 # Pacman Basics
 > [Arch Wiki: Pacman](https://wiki.archlinux.org/title/Pacman)
 The single most important tool on your system. Learn these commands and you will be fine.

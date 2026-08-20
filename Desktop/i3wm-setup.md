@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Desktop](.) • [Next: Display Manager →](display-manager.md)
+
+</div>
+
+---
+
 # i3 Window Manager Setup
 > [Arch Wiki: i3](https://wiki.archlinux.org/title/I3)
 Installing and configuring a tiling window manager. i3 is my go-to because it stays out of the way.

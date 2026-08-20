@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Post-Install](.) • [Next: Networking →](networking.md)
+
+</div>
+
+---
+
 # Users and Sudo
 > [Arch Wiki: Users and groups](https://wiki.archlinux.org/title/Users_and_groups) & [Arch Wiki: Sudo](https://wiki.archlinux.org/title/Sudo)
 Creating an unprivileged user for daily use and giving them root access via `sudo`. Do not skip this.

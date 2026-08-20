@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Installation](.) • [Next: Partitioning →](partitioning.md)
+
+</div>
+
+---
+
 # Pre-Install Checklist
 > [Arch Wiki: Installation guide](https://wiki.archlinux.org/title/Installation_guide)
 

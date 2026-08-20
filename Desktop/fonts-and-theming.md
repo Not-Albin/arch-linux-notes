@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Desktop](.) • [← Display Manager](display-manager.md) • [Next: Picom →](picom.md)
+
+</div>
+
+---
+
 # Fonts and Theming
 > [Arch Wiki: Fonts](https://wiki.archlinux.org/title/Fonts)
 Making your desktop readable and not ugly. These are the fonts and themes I actually use.

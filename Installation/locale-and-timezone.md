@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Installation](.) • [← Bootloader](bootloader.md)
+
+</div>
+
+---
+
 # Locale and Timezone
 > [Arch Wiki: Locale](https://wiki.archlinux.org/title/Locale) & [Arch Wiki: Time](https://wiki.archlinux.org/title/Time)
 

@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Troubleshooting](.) • [← Network Debug](network-debug.md) • [Next: Pacman Errors →](pacman-errors.md)
+
+</div>
+
+---
+
 # Black Screen After Login
 > [Arch Wiki: Xorg](https://wiki.archlinux.org/title/Xorg)
 Fixing the situation where you log in and see only a black screen. Or get dumped back to the login prompt.

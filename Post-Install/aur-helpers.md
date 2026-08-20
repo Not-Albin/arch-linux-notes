@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Post-Install](.) • [← Audio](audio.md) • [Next: Pacman Basics →](pacman-basics.md)
+
+</div>
+
+---
+
 # AUR Helpers
 > [Arch Wiki: Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository)
 Automating AUR package builds so you do not have to manually run `makepkg` every time.

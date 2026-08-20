@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Troubleshooting](.) • [Next: Network Debug →](network-debug.md)
+
+</div>
+
+---
+
 # Common Boot Issues
 > [Arch Wiki: Boot loaders](https://wiki.archlinux.org/title/Boot_loaders)
 Recovering from a system that will not boot. This section exists because I have broken my bootloader enough times to know the pain.

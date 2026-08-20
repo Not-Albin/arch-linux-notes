@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Desktop](.) • [← i3 Window Manager](i3wm-setup.md) • [Next: Fonts & Theming →](fonts-and-theming.md)
+
+</div>
+
+---
+
 # Display Manager
 > [Arch Wiki: Display manager](https://wiki.archlinux.org/title/Display_manager)
 Adding a graphical login screen so you do not need to type `startx` every time. I used to just use `startx` but a display manager is more convenient.

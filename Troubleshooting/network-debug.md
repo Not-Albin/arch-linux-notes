@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Troubleshooting](.) • [← Boot Issues](common-boot-issues.md) • [Next: Black Screen After Login →](black-screen-after-login.md)
+
+</div>
+
+---
+
 # Network Troubleshooting
 > [Arch Wiki: Network configuration](https://wiki.archlinux.org/title/Network_configuration) & [Arch Wiki: Wireless network configuration](https://wiki.archlinux.org/title/Wireless_network_configuration)
 Diagnosing Wi-Fi and wired connection problems. Usually it is something dumb that I forgot to check.

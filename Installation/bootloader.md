@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Installation](.) • [← Base Install](base-install.md) • [Next: Locale & Timezone →](locale-and-timezone.md)
+
+</div>
+
+---
+
 # Bootloader
 > [Arch Wiki: GRUB](https://wiki.archlinux.org/title/GRUB) & [Arch Wiki: systemd-boot](https://wiki.archlinux.org/title/Systemd-boot)
 

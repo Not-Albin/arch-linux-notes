@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Post-Install](.) • [← Users & Sudo](users-and-sudo.md) • [Next: Audio →](audio.md)
+
+</div>
+
+---
+
 # Networking
 > [Arch Wiki: Network configuration](https://wiki.archlinux.org/title/Network_configuration) & [Arch Wiki: NetworkManager](https://wiki.archlinux.org/title/NetworkManager)
 Getting online. NetworkManager is what I use on all my Arch installs because it just works.

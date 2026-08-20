@@ -1,3 +1,11 @@
+<div align="center">
+
+[← Home](../README.md) • [Desktop](.) • [← Fonts & Theming](fonts-and-theming.md)
+
+</div>
+
+---
+
 # Picom
 > [Arch Wiki: Picom](https://wiki.archlinux.org/title/Picom)
 Adding transparency, shadows, and smooth window transitions. Also fixes screen tearing on some setups.
