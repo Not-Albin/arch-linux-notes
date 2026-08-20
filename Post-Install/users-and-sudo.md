@@ -3,7 +3,7 @@
 Creating an unprivileged user for daily use and giving them root access via `sudo`. Do not skip this.
 
 ## Why Not Root?
-Running as root all the time is dangerous. A typo or a compromised script can nuke your entire system. Arch is do-it-yourself, so the safety rails are thinner than on other distros. Use a normal user and escalate only when needed. Trust me, you will thank yourself later.
+Running as root all the time is dangerous. A typo or a compromised script can nuke your entire system. Arch is do-it-yourself, so the safety rails are thinner than on other distros. Use a normal user and escalate only when needed. 
 
 ## Create a User
 ```bash
